@@ -1,0 +1,61 @@
+body {
+    font-family: $primary-text, sans-serif;
+    font-size: $primary-font-size;
+    font-weight: $primary-font-weight;
+    line-height: $primary-line-height;
+    letter-spacing: $primary-letter-spacing;
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+a {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    min-width: 320px; // Указание min i max ширины делает контейнер тянущим
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+
+.section {
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 84px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 130px;
+    }
+}

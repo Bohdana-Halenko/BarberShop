@@ -1,0 +1,228 @@
+.page-header {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+    min-width: 320px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 767px) {
+        max-width: 480px;
+        margin-bottom: 84px;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 1280px;
+        margin-bottom: 130px;
+    }
+}
+
+.absolute-container {
+    position: absolute;
+    max-width: 480px;
+    width: 100%;
+    top: 40px;
+    z-index: 2;
+    padding-left: 31px;
+    padding-right: 31px;
+
+    @media (min-width: 768px) {
+        max-width: 546px;
+        width: 100%;
+        left: 463px;
+        transform: translate(-50%, 0%);
+        padding: 0;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 1015px;
+        width: 100%;
+        left: 720px;
+        transform: translate(-50%, 0%);
+        padding: 0;
+    }
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 112px;
+
+    @media (max-width: 480px) {
+        margin-bottom: 15vw;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 156px;
+        align-items: baseline;
+    }
+
+    @media (min-width: 1280px) {
+        margin-bottom: 192px;
+    }
+}
+
+.site-nav,
+.contacts-container {
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    @media (min-width: 1280px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+}
+
+.site-nav__list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 24px;
+
+    @media (min-width: 1280px) {
+        margin-right: 40px;
+    }
+}
+
+.site-nav__link,
+.contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-text-color
+    }
+}
+
+.contacts-button {
+    display: block;
+    height: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    @media (min-width: 1280px) {
+        margin-left: 40px;
+        margin-bottom: 0px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #FF6C00;
+    }
+}
+
+.company-logo {
+    display: flex;
+    fill: #fff;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hero {
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1280px) {
+        max-width: 500px;
+        margin-left: 45px;
+    }
+}
+
+.hero__subtitle {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 60px;
+        height: 1px;
+        background: rgba(157, 164, 189, 0.6);
+    }
+}
+
+.hero__title {
+    margin-bottom: 20px;
+    font-family: $secondary-text;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    // Адаптивный текст в зависимости от ширины экрана
+    @media (max-width: 480px) {
+        font-size: 10vw;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 72px;
+        line-height: 85px;
+    }
+}
+
+.hero__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: $secondary-text-color;
+
+    @media (min-width: 1280px) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

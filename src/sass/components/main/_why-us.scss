@@ -1,0 +1,113 @@
+.flex {
+    @media (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
+
+.description-wrapper {
+    margin-bottom: 64px;
+
+    @media (min-width: 768px) {
+        width: 500px;
+        margin-bottom: 44px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-bottom: 0px;
+    }
+}
+
+.why-us__subtitle {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $other-text-color;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 60px;
+        height: 1px;
+        background: $other-text-color;
+    }
+}
+
+.why-us__title {
+    margin-bottom: 20px;
+    font-family: $secondary-text;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: $other-text-color;
+}
+
+.achievments-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1280px) {
+        margin-left: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 2 * 30px)/2);
+        height: 130px;
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+    }
+
+    &__item:nth-child(2) {
+        margin-top: 45px;
+        margin-bottom: 0;
+    }
+
+    &__item:nth-child(3) {
+        margin-top: 0;
+    }
+
+    &__item:nth-child(4) {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.achievments-list__number {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $other-text-color;
+}
+
+.achievments-list__description {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: $other-text-color;
+}
+
+sup {
+    color: $accent-text-color;
+}
