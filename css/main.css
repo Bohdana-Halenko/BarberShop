@@ -890,6 +890,9 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -904,7 +907,7 @@ img {
   }
   .price-list-one,
   .price-list-two {
-    width: 585px;
+    width: 510px;
     padding: 30px 40px;
   }
 }

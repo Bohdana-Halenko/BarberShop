@@ -97,6 +97,7 @@
     @media screen and (min-width: 1280px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -111,7 +112,7 @@
 
     .price-list-one,
     .price-list-two {
-        width: 585px;
+        width: 510px;
         padding: 30px 40px;
     }
 }
