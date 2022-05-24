@@ -1,6 +1,5 @@
 .sidebar {
     width: 159px;
-    height: 680px;
     padding: 32px;
 
     @media (max-width: 767px) {
@@ -17,7 +16,7 @@
     display: flex;
     flex-direction: row;
     transform: rotate(-90deg);
-    margin-top: 400px;
+    margin-top: 325px;
 }
 
 .sidebar__social-list-item:first-child {
